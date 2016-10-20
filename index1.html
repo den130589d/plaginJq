@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		h1, h2, h3, h4{
+			height: 1000px;
+			text-align: center;
+			
+		}
+		.fix{
+			position: fixed;
+			
+			
+		}
+	</style>
+</head>
+<body>
+		<div class="fix">
+			<a href="#h1"><button>H1</button></a>
+			<a href="#h2"><button>H2</button></a>
+			<a href="#h3"><button>H3</button></a>
+			<a href="#h4"><button>H4</button></a>
+		</div>
+		<h1 id="h1">Text1</h1>
+		<h2 id="h2">Text2</h2>
+		<h3 id="h3">Text3</h3>
+		<h4 id="h4">Text4</h4>
+
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="slowScroll.jquery.js"></script>
+	<script src="follow.jquery.js"></script>
+	<script>
+		$('a').slowScroll(500);
+		$(window).follow({
+			background : 'white',
+			color : 'red'
+		}, true);
+	</script>
+</body>
+</html>
